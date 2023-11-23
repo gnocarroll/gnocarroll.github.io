@@ -25,19 +25,17 @@
         display: flex;
         justify-content: center;
       }
-      .flex-container-1 > div {
-        width: 50%;
-      }
       .outermost-container {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
       }
       .image-of-me {
-        width: 100%;
+        width: 65%;
         border-radius: 10px;
-        padding: 10px;
-        box-shadow: 5px 5px 3px;
+        box-shadow: 5px 5px 5px darkgrey;
+        margin-left: auto;
+        margin-right: auto;
       }
     </style>
   </head>
@@ -49,7 +47,7 @@
       </h1>
   
       <div class="flex-container-1">
-        <div>
+        <div style="width:60%;">
           <h2 class="header">
             About Me
           </h2>
@@ -66,7 +64,7 @@
             Right now, I am trying to learn graphics programming online through C/C++ and OpenGL.
           </p>
         </div>
-        <div>
+        <div style="width:40%;">
             <img src="assets/me.jpg" alt="A photo of me" class="image-of-me">
         </div>
       </div>
