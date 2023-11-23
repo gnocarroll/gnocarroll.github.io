@@ -9,7 +9,11 @@
         color: #FFCCCB;
         font-family: calibri;
       }
-      p {
+      .standard-p {
+        color: #FAF9F6;
+        font-family: calibri;
+      }
+      .indented-p {
         text-indent: 30px;
         color: #FAF9F6;
         font-family: calibri;
@@ -22,12 +26,18 @@
         justify-content: center;
       }
       .flex-container-1 > div {
-        width: 35%;
+        width: 50%;
       }
       .outermost-container {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
+      }
+      .image-of-me {
+        width: 100%;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 5px 5px 3px;
       }
     </style>
   </head>
@@ -43,7 +53,7 @@
           <h2 class="header">
             About Me
           </h2>
-          <p>
+          <p class="indented-p">
             I am a computer science and data science double major at Purdue University graduating in 2026.
             In my free time, I enjoy watching soccer and playing video games.
             I am currently building my programming skills by taking on relevant coursework in data structures and
@@ -51,20 +61,20 @@
             Additionally, I am a teaching assistant for an object-oriented programming class and
             will pivot next semester to helping students learn the C programming language.
           </p>
-          <p>
+          <p class="indented-p">
             In the future, I hope to build on my skills through my coursework and interesting outside projects.
             Right now, I am trying to learn graphics programming online through C/C++ and OpenGL.
           </p>
         </div>
         <div>
-            <img src="assets/me.jpg" alt="A photo of me" width=100%>
+            <img src="assets/me.jpg" alt="A photo of me" class="image-of-me">
         </div>
       </div>
 
       <h2 class="header">
         Contact Information
       </h2>
-      <p>
+      <p class="standard-p">
         The best place to reach me is through my school email, gocarrol [at] purdue [dot] edu.
       </p>
     </div>
